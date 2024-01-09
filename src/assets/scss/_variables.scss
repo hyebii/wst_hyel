@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+// style guide
+$font-family-base: 'nanumSquareNeo','Malgun Gothic',Arial,'Doutm',Tahoma,sans-serif !default;
+$font-family-eng: 'nexonLv1','Malgun Gothic',Arial,'Doutm',Tahoma,sans-serif;
+
+/* Primary */
+$primary-disabled: #ff0000 !default;
+
+/* Secondary */
+
+// font color
+$black: #000 !default;
+$black-0d: #0D0B08 !default;
+$black-0d-disabled: #565553 !default; // #0D0B08, opacity: 0.7
+$black-16: #161616 !default;
+$black-3d: #3D3C39 !default;
+$black-3d-4: #A7A4A0 !default; // #3D3C39, opacity: 0.4
+
+$gray-6e: #6e6d6b !default;
+$gray-3d: rgba(61, 60, 57, 0.6) !default;
+$gray-be: #BEBBB6 !default;
+
+$white: #fff !default;
+$white-disabled: rgba(255, 255, 255, 0.4) !default;
+$white-015: rgba(255, 255, 255, 0.15) !default; // opacity: 0.15
+
+// border
+$border-0d-4: #94908C !default; // #0D0B08, opacity: 0.4
+$border-0d-6: #676560 !default; // #0D0B08, opacity: 0.6
+$border-3d-8: #646361 !default; // #3D3C39, opacity: 0.8
+$border-ce: #CED4DA !default;
+
+// bg
+$inp-disabled: #E0DFDC !default;
+
+$bg-gray: #9E9D9C !default;
+$bg-gray-disabled: #BBBBBA !default;
+
+$bg-10: #101B99 !default;
+$bg-10-disabled: #5860b8 !default;
+
+$bg-0d-2: rgba(13, 11, 8, 0.2) !default; // #0D0B08 opacity: 0.2
+$bg-0d-6: rgba(13, 11, 8, 0.6) !default; // #0D0B08 opacity: 0.6
+$bg-0d-05: rgba(13, 11, 8, 0.05) !default; // #0D0B08 opacity: 0.5
+$bg-0d-9: rgba(13, 11, 8, 0.9) !default; // #0D0B08 opacity: 0.9
+$bg-3d: rgba(61, 60, 57, 0.6) !default;
+$bg-3f: #3FD23C !default;
+$bg-b6: #B6B7B9 !default;
+$bg-e: #EEEAE4 !default;
+$bg-e3: #E3DFD8 !default;
+$bg-f-4: #f5f2ef !default; // rgba(255, 255, 255, 0.4)
+$bg-f7: #F7F8FA !default;
+$bg-b7: #B7AA64 !default;
+
+// font-weight
+$fw-ex-bold: 800 !default;
+$fw-bold: 700 !default;
+$fw-sm-bold: 600 !default;
+$fw-medium: 500 !default;
+$fw-regular: 400 !default;
+$fw-light: 300 !default;
+
+
+/*******************************************************************
+	Reset
+********************************************************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: $fw-regular;
+  // vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+  border: 0;
+  *margin: 0;
+  *padding: 0;
+  *font-size: 0;
+}
+blockquote, q {quotes:none}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none}
+table {border-collapse:collapse;border-spacing:0}
+img {max-width:100%;width:100%;height:auto;vertical-align:top}
+ul, ol {list-style: none}
+html, body {width:100%;height:100%;font-family:$font-family-base;font-size:16px;font-weight:400} /* 폰트셋팅 */
+body * {box-sizing: border-box}
+strong{font-weight: $fw-bold}
+/* Form */
+input, textarea, select, button {
+  font-family: $font-family-base;
+  color: $black-0d;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+select {
+  color: $black-0d;
+}
+button {overflow: visible;width: auto;margin: 0;padding: 0;border: 0;background: none;cursor: pointer}
+button:disabled{cursor:default}
+input[type="button"], input[type="text"], input[type="image"], input[type="submit"], textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+input::-ms-clear {display:none}
+input[type="text"]:focus {outline: none}
+input[type="text"]:focus.read {outline: none}
+input[type="text"]:focus {outline: none}
+input[type="text"], input[type="password"], input[type="number"], input[type="file"] {
+  vertical-align: top;
+  outline: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {-webkit-appearance:none;margin:0;-webkit-border-radius: 0}
+select {
+  width: 100%;
+  border: 0;
+  z-index:1 !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  box-sizing: border-box;
+}
+select:focus{
+  outline: none;
+}
+select option {
+  margin: 0;
+  color: $black-0d;
+}
+select::-ms-expand {display:none}
+textarea {
+  resize: none;
+  border: 0;
+  vertical-align: top;
+  &:focus{
+    outline: none;
+  }
+}
+a {text-decoration:none;cursor: pointer;color: inherit;}
+a[href^="tel"] {font-style: normal}
+
+/* placeholder */
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {color: transparent}
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder {color: transparent}
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {color: transparent}
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {color: transparent}
+input::-ms-input-placeholder{color: $gray-3d} 
+input::-webkit-input-placeholder{color: $gray-3d} 
+input::-moz-placeholder{color: $gray-3d}
+input:-ms-input-placeholder{color: $gray-3d}
+input:-moz-input-placeholder{color: $gray-3d}
+
+textarea:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {color: transparent}
+textarea:focus:-moz-placeholder, textarea:focus:-moz-placeholder {color: transparent}
+textarea:focus::-moz-placeholder, textarea:focus::-moz-placeholder {color: transparent}
+textarea:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {color: transparent}
+textarea::-ms-input-placeholder{color: $gray-3d} 
+textarea::-webkit-input-placeholder{color: $gray-3d} 
+textarea::-moz-placeholder{color: $gray-3d}
+textarea:-ms-input-placeholder{color: $gray-3d}
+input:-moz-input-placeholder{color: $gray-3d}
+
+/* 대체 텍스트 */
+.blind {visibility:hidden;overflow:hidden;position:absolute;top:0;left:0;width:0;height:0;font-size:0;line-height:0}
+/* 마진 / 패딩 설정 */
+@for $i from 1 through 100{
+	.mt#{$i*5}{
+		margin-top: #{$i * 5}px !important;
+	}
+	.pt#{$i*5}{
+		padding-top: #{$i * 5}px !important;
+	}
+}
+
+/* text 정렬 */
+.al{text-align: left !important}
+.ac{text-align: center !important}
+.ar{text-align: right !important}
+/* border none */
+.brtn{border-top: 0 !important}
+.brrn{border-right: 0 !important}
+.brbn{border-bottom: 0 !important}
+.brln{border-left: 0 !important}
+/* margin none */
+.mtn{margin-top: 0 !important}
+.mrn{margin-right: 0 !important}
+.mbn{margin-bottom: 0 !important}
+.mln{margin-left: 0 !important}
+/* padding none */
+.ptn{padding-top: 0 !important}
+.prn{padding-right: 0 !important}
+.pbn{padding-bottom: 0 !important}
+.pln{padding-left: 0 !important}
+.pdn{padding: 0 !important}
+
+h2,h3,h4{
+	font-weight: $fw-bold;
+}
+
+.eng{
+  font-family: $font-family-eng;
+  line-height: 1.1785;
+}
+
