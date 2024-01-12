@@ -1,0 +1,105 @@
+/*******************************************************************
+	form
+********************************************************************/
+
+//검색창
+
+#search{
+	.search{
+		&-inner{
+			position: relative;
+			width: 100%;
+			height: 80px;
+			padding: 17px 40px;
+			border-bottom: 1px solid $black;
+			label{
+				width: 24px;
+				height: 24px;
+				background: url('../images/icon/ico_search.svg') no-repeat 0 0;
+				background-size: 100%;
+				position: absolute;
+				top: 50%;
+				left: 53px;
+				transform: translateY(-50%);
+			}
+		}
+		&-input{
+			background: $white-015;
+			border: 1px solid $black-16;
+			width: 100%;
+			padding: 14px 45px;
+			border-radius: 40px;
+			@include font(16px, $white);
+		}
+	}
+}
+
+
+/*******************************************************************
+	button
+********************************************************************/
+//play-icon
+.play-icon{
+	a{
+		display: block;
+		position: relative;
+		width: 100%;
+		cursor: pointer;
+		&::before{
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: $black;
+			opacity: 0.4;
+		}
+		&::after{
+			content: '';
+			opacity: 0;
+			width: 80px;
+			height: 80px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: $black-opacity url('../images/icon/ico_play.svg') no-repeat 50%;
+			border-radius: 50%;
+		}
+		&:hover::before{
+			opacity: 0;
+			transition: 0.2s;
+		}
+		&:hover::after{
+			opacity: 1;
+		}
+	}
+}
+
+//swiper
+.swiper-button-prev{
+	background: #00000069;
+	left: 0 !important;
+	top: 40% !important;
+}
+.swiper-button-next{
+	background: #00000069;
+	right: 0 !important;
+	top: 40% !important;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after{
+	color: $white;
+	font-size: 30px !important;
+}
+// .swiper-button-prev.swiper-button-disabled, 
+// .swiper-button-next.swiper-button-disabled {
+// 	opacity: 0 !important;
+// }
+// .video__slider .swiper-button-next {
+// 	top: 50% !important;
+// }
+// .video__slider .swiper-button-prev {
+// 	top: 50% !important;
+// }

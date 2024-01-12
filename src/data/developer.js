@@ -1,0 +1,92 @@
+export const developText = [
+  {
+    img: "https://yt3.googleusercontent.com/JuRcVt9OFQgqh7UL1LjihpVLEbjdNXt3tGq-IQfqRMT8wVXgWg_tzyz0S_GVsgqkB3ucBC5fqeY=s176-c-k-c0x00ffffff-no-rj",
+    name: "조코딩 JoCoding",
+    address: "https://www.youtube.com/@jocoding",
+    channelId: "UCQNE2JmbasNYbjGAcuBiRRg",
+  },
+  {
+    img: "https://yt3.googleusercontent.com/ytc/AOPolaSNRWU5nI-gDyzEdtbhpLqWg8wXNs-FQHf35iMCOw=s176-c-k-c0x00ffffff-no-rj",
+    name: "생활코딩",
+    address: "https://www.youtube.com/@coohde",
+    channelId: "UCvc8kv-i5fvFTJBFAk6n1SA",
+  },
+  {
+    img: "https://yt3.googleusercontent.com/ytc/AOPolaSn88PvVXWN_Wy5vSr-5Eo_NGDdw_apL6bM7QKfCw=s176-c-k-c0x00ffffff-no-rj",
+    name: "노마드 코더 Nomad Coders",
+    address: "https://www.youtube.com/@nomadcoders",
+    channelId: "UCUpJs89fSBXNolQGOYKn0YQ",
+  },
+  {
+    img: "https://yt3.googleusercontent.com/ytc/AOPolaSeGpiSPyozdunhf74J4oa2XWHPObm8bKTcbEU=s176-c-k-c0x00ffffff-no-rj",
+    name: "코딩하는거니",
+    address: "https://www.youtube.com/@gunnycoding",
+    channelId: "UCO7g158NWgLyn98z8v3zduA",
+  },
+  {
+    img: "https://yt3.googleusercontent.com/iofg4f6THo3jyeap1GC23g5qsKD-w62Lu4U9EJBmZe8YtM1NhbNWz4WiyICAXXmwrgbnUh-FNQ=s176-c-k-c0x00ffffff-no-rj",
+    name: "워니코딩",
+    address: "https://www.youtube.com/@WonieSong",
+    channelId: "UC0uDM1xZMNBAoW2xnzhAQ7g",
+  },
+  {
+    img: "https://yt3.googleusercontent.com/JuRcVt9OFQgqh7UL1LjihpVLEbjdNXt3tGq-IQfqRMT8wVXgWg_tzyz0S_GVsgqkB3ucBC5fqeY=s176-c-k-c0x00ffffff-no-rj",
+    name: "조코딩 JoCoding",
+    address: "https://www.youtube.com/@jocoding",
+    channelId: "UCQNE2JmbasNYbjGAcuBiRRg",
+  },
+  {
+    img: "https://yt3.googleusercontent.com/ytc/AOPolaSNRWU5nI-gDyzEdtbhpLqWg8wXNs-FQHf35iMCOw=s176-c-k-c0x00ffffff-no-rj",
+    name: "생활코딩",
+    address: "https://www.youtube.com/@coohde",
+    channelId: "UCvc8kv-i5fvFTJBFAk6n1SA",
+  },
+  {
+    img: "https://yt3.googleusercontent.com/ytc/AOPolaSn88PvVXWN_Wy5vSr-5Eo_NGDdw_apL6bM7QKfCw=s176-c-k-c0x00ffffff-no-rj",
+    name: "노마드 코더 Nomad Coders",
+    address: "https://www.youtube.com/@nomadcoders",
+    channelId: "UCUpJs89fSBXNolQGOYKn0YQ",
+  },
+  {
+    img: "https://yt3.googleusercontent.com/ytc/AOPolaSeGpiSPyozdunhf74J4oa2XWHPObm8bKTcbEU=s176-c-k-c0x00ffffff-no-rj",
+    name: "코딩하는거니",
+    address: "https://www.youtube.com/@gunnycoding",
+    channelId: "UCO7g158NWgLyn98z8v3zduA",
+  },
+  {
+    img: "https://yt3.googleusercontent.com/iofg4f6THo3jyeap1GC23g5qsKD-w62Lu4U9EJBmZe8YtM1NhbNWz4WiyICAXXmwrgbnUh-FNQ=s176-c-k-c0x00ffffff-no-rj",
+    name: "워니코딩",
+    address: "https://www.youtube.com/@WonieSong",
+    channelId: "UC0uDM1xZMNBAoW2xnzhAQ7g",
+  },
+  {
+    img: "https://yt3.googleusercontent.com/JuRcVt9OFQgqh7UL1LjihpVLEbjdNXt3tGq-IQfqRMT8wVXgWg_tzyz0S_GVsgqkB3ucBC5fqeY=s176-c-k-c0x00ffffff-no-rj",
+    name: "조코딩 JoCoding",
+    address: "https://www.youtube.com/@jocoding",
+    channelId: "UCQNE2JmbasNYbjGAcuBiRRg",
+  },
+  {
+    img: "https://yt3.googleusercontent.com/ytc/AOPolaSNRWU5nI-gDyzEdtbhpLqWg8wXNs-FQHf35iMCOw=s176-c-k-c0x00ffffff-no-rj",
+    name: "생활코딩",
+    address: "https://www.youtube.com/@coohde",
+    channelId: "UCvc8kv-i5fvFTJBFAk6n1SA",
+  },
+  {
+    img: "https://yt3.googleusercontent.com/ytc/AOPolaSn88PvVXWN_Wy5vSr-5Eo_NGDdw_apL6bM7QKfCw=s176-c-k-c0x00ffffff-no-rj",
+    name: "노마드 코더 Nomad Coders",
+    address: "https://www.youtube.com/@nomadcoders",
+    channelId: "UCUpJs89fSBXNolQGOYKn0YQ",
+  },
+  {
+    img: "https://yt3.googleusercontent.com/ytc/AOPolaSeGpiSPyozdunhf74J4oa2XWHPObm8bKTcbEU=s176-c-k-c0x00ffffff-no-rj",
+    name: "코딩하는거니",
+    address: "https://www.youtube.com/@gunnycoding",
+    channelId: "UCO7g158NWgLyn98z8v3zduA",
+  },
+  {
+    img: "https://yt3.googleusercontent.com/iofg4f6THo3jyeap1GC23g5qsKD-w62Lu4U9EJBmZe8YtM1NhbNWz4WiyICAXXmwrgbnUh-FNQ=s176-c-k-c0x00ffffff-no-rj",
+    name: "워니코딩",
+    address: "https://www.youtube.com/@WonieSong",
+    channelId: "UC0uDM1xZMNBAoW2xnzhAQ7g",
+  },
+];

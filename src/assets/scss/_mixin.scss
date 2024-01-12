@@ -30,6 +30,14 @@ $font-size-base: 16px;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
+//웹스토리보이
+@mixin line($num){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $num;
+  -webkit-box-orient: vertical;
+}
 
 //  ------------------------------------------------------------
 // Example
